@@ -22,13 +22,13 @@ function set_page_in_add_child_task_block(obj_task) {
   form_nav.className = "col-md-6 px-0"
 
   var label = document.createElement("label")
-  label.innerText = "UUID : "
+  label.innerText = "活動名稱"
   label.className="d-flex"
 
   var uuid_task = document.createElement("li")
   uuid_task.id = 'uuid_name'
-  uuid_task.innerText = obj_task.uuid;
-  uuid_task.style = "margin-left: 26px; list-style-type: none;"// list-style-type: upper-roman;"
+  uuid_task.innerText = 'UUID：' + obj_task.uuid;
+  uuid_task.style = "margin-left: 26px; list-style-type: upper-roman;"
 
   var nav_container = document.createElement("div")
   nav_container.className = "d-flex align-items-center"
@@ -320,7 +320,7 @@ export function deep_participation_add_child_task_block(obj_task) {
 
   var uuid_task = document.createElement("li")
   uuid_task.id = 'uuid_name'
-  uuid_task.innerText = uuid_child
+  uuid_task.innerText = 'UUID：' + uuid_child;
   uuid_task.style = "margin-left: 26px; list-style-type: upper-roman;"
 
   var nav_container = document.createElement("div")
